@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="logojavascript">
+</head>
+<body>
+    <header>
+        <div id="titulo">Tienda - 2024 - Talento Tech</div>
+        <br>
+        <button id="btnpagar" onclick="pagar()">Pagar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </header>
+    <main>
+        <section>
+            <div class="tarjeta">
+                <h3>Recorrido P.Madero</h3>
+                <h2>$ 2000.-</h2>
+                <button id="btnComprar" onclick="agregarProducto('RecorridoP.Madero', 2000)">Comprar</button>
+            </div>
+        </section>
+        <section>
+            <div class="tarjeta">
+                <h3>Recorrido Point</h3>
+                <h2>$ 3000.-</h2>
+                <button id="btnComprar" onclick="agregarProducto('RecorridoPoint', 3000)">Comprar</button>
+            </div>
+        </section>
+        <section>
+            <div class="tarjeta">
+                <h3>Recorrido Obelisco</h3>
+                <h2>$ 1500.-</h2>
+                <button id="btnComprar" onclick="agregarProducto('RecorridoObelisco', 1500)">Comprar</button>
+            </div>
+        </section>
+    </main>
+    <div id="carrito"></div>
+
+    <footer></footer>
+<a href="index.html"><button>Inicio</button></a>
+    <script src="tienda.js"> </script> 
+    <script src="app.js"></script>
+    <script src="compra.js"></script>
+  
+</body>
+</html>
